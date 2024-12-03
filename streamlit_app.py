@@ -38,13 +38,41 @@ def filter_input(input_string, merchants, tags, cities):
     ]
     return filtered_words
 
+# Generate query and run it on the DataFrame
+def run_query(data, user_input, filtered_words, method):
+    if method == "StringMatching" and filtered_words:
+        # Create filtering conditions
+        conditions = []
+        for word in filtered_words:
+            condition = (
+                f"(Merchant.str.contains('{word}', case=False, na=False) | "
+                f"Tag1.str.contains('{word}', case=False, na=False) | "
+                f"Tag2.str.contains('{word}', case=False, na=False) | "
+                f"Tag3.str.contains('{word}', case=False, na=False) | "
+                f"City.str.contains('{word}', case=False, na=False))"
+            )
+            conditions.append(condition)
+
+        # Combine conditions
+        query = " & ".join(conditions)
+
+        # Filter DataFrame based on the query
+        filtered_data = data.query(query, engine='python')
+        return filtered_data
+    elif method == "NL2Q":
+        st.warning("Complex NL2Q queries are not yet supported for CSV.")
+        return None
+    else:
+        st.warning("No matching records found.")
+        return None
+
 # Main Streamlit app
 def main():
     st.title("Transaction Query App")
     st.write("Enter a query about transactions and get results.")
 
     # File path to the transaction.csv
-    file_path = "transaction.csv"
+    file_path = "transaction.csv"  # Ensure this file is in the same directory
 
     # Load data
     data = load_data(file_path)
@@ -67,28 +95,14 @@ def main():
             filtered_words = filter_input(user_input, merchants, tags, cities)
             st.write(f"Filtered words: {filtered_words}")
 
-            # Generate SQL-like query or filter logic
-            if processing_method == "StringMatching" and filtered_words:
-                # Create filtering conditions
-                conditions = []
-                for word in filtered_words:
-                    condition = (
-                        f"(Merchant.str.contains('{word}', case=False) | "
-                        f"Tag1.str.contains('{word}', case=False) | "
-                        f"Tag2.str.contains('{word}', case=False) | "
-                        f"Tag3.str.contains('{word}', case=False) | "
-                        f"City.str.contains('{word}', case=False))"
-                    )
-                    conditions.append(condition)
+            # Run the query on the data
+            result = run_query(data, user_input, filtered_words, processing_method)
 
-                # Combine conditions
-                query = " & ".join(conditions)
-
-                # Filter DataFrame based on the query
-                filtered_data = data.query(query, engine='python')
-                st.write("Filtered Results:", filtered_data)
+            if result is not None and not result.empty:
+                st.write("Query Results:")
+                st.dataframe(result)
             else:
-                st.write("Could not classify the query. Try using different keywords.")
+                st.write("No results found. Try refining your query.")
         else:
             st.write("Please enter a query.")
 
