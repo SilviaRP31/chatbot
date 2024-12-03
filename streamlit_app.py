@@ -72,10 +72,10 @@ def main():
     st.write("Enter a query about transactions and get results.")
 
     # File path to the transaction.csv
-    file_path = "transaction.csv"  # Ensure this file is in the same directory
+    file_path = "transactions.csv"  # Ensure this file is in the same directory
 
     # Load data
-    data = load_data(file_path)
+    data = pd.read_csv(file_path, header=None, names=["Date", "Amount", "Merchant", "Tag1", "Tag2", "Tag3", "City"])
 
     # Sample merchants, tags, and cities for filtering
     merchants = data['Merchant'].unique().tolist()
