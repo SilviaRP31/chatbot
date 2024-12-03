@@ -1,6 +1,14 @@
 import streamlit as st
 import pandas as pd
 import re
+from google.cloud import aiplatform
+
+# Initialize Vertex AI with your project details
+aiplatform.init(project="go-agl-poc-itedt-p01-poc", location="europe-west4")
+
+# List models to test authentication
+models = aiplatform.Model.list()
+print("Available models:", models)
 
 # Load the CSV file into a Pandas DataFrame
 @st.cache_data
@@ -31,12 +39,20 @@ def handle_input(input_string):
 
 # Filter input to match known categories
 def filter_input(input_string, merchants, tags, cities):
-    words = input_string.split()
-    filtered_words = [
-        word for word in words
-        if word in merchants or word in tags or word in cities
-    ]
+    # Split the input into words
+    words = input_string.lower().split()
+
+    # Combine merchants, tags, and cities into a single searchable list
+    all_keywords = set(merchants + tags + cities)
+
+    # Normalize keywords to lowercase for case-insensitive matching
+    all_keywords = {keyword.lower() for keyword in all_keywords if isinstance(keyword, str)}
+
+    # Filter words that match any keyword in the list
+    filtered_words = [word for word in words if word in all_keywords]
+
     return filtered_words
+
 
 # Generate query and run it on the DataFrame
 def run_query(data, user_input, filtered_words, method):
