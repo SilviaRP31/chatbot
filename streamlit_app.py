@@ -1,56 +1,97 @@
 import streamlit as st
-from openai import OpenAI
+import pandas as pd
+import re
 
-# Show title and description.
-st.title("💬 Chatbot")
-st.write(
-    "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
-    "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
-    "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
-)
+# Load the CSV file into a Pandas DataFrame
+@st.cache_data
+def load_data(file_path):
+    return pd.read_csv(file_path)
 
-# Ask user for their OpenAI API key via `st.text_input`.
-# Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
-# via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
-openai_api_key = st.text_input("OpenAI API Key", type="password")
-if not openai_api_key:
-    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
-else:
+# Handle input to classify and determine processing method
+def handle_input(input_string):
+    # Check for date and/or amount
+    month_match = re.search(r"\b(january|february|march|april|may|june|july|august|september|october|november|december|enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|año|year)\b", input_string.lower())
+    number_match = re.search(r'\d+', input_string)
 
-    # Create an OpenAI client.
-    client = OpenAI(api_key=openai_api_key)
+    # Check for Tag and City mentions in the input
+    tag_keywords = ["tag1", "tag2", "tag3"]  # List of possible tag columns
+    city_keywords = ["city"]  # List for city
+    merchant_keywords = ["merchant"]  # List for merchants
 
-    # Create a session state variable to store the chat messages. This ensures that the
-    # messages persist across reruns.
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
+    # Check if any tag or city keywords are in the input
+    tags_detected = any(tag in input_string.lower() for tag in tag_keywords)
+    city_detected = any(city in input_string.lower() for city in city_keywords)
+    merchant_detected = any(merchant in input_string.lower() for merchant in merchant_keywords)
 
-    # Display the existing chat messages via `st.chat_message`.
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
+    # If multiple columns or patterns detected, classify as NL2Q
+    if (tags_detected and merchant_detected and city_detected) or (tags_detected and city_detected) or (tags_detected and merchant_detected) or (city_detected and merchant_detected) or number_match or month_match:
+        return "NL2Q"
+    else:
+        return "StringMatching"
 
-    # Create a chat input field to allow the user to enter a message. This will display
-    # automatically at the bottom of the page.
-    if prompt := st.chat_input("What is up?"):
+# Filter input to match known categories
+def filter_input(input_string, merchants, tags, cities):
+    words = input_string.split()
+    filtered_words = [
+        word for word in words
+        if word in merchants or word in tags or word in cities
+    ]
+    return filtered_words
 
-        # Store and display the current prompt.
-        st.session_state.messages.append({"role": "user", "content": prompt})
-        with st.chat_message("user"):
-            st.markdown(prompt)
+# Main Streamlit app
+def main():
+    st.title("Transaction Query App")
+    st.write("Enter a query about transactions and get results.")
 
-        # Generate a response using the OpenAI API.
-        stream = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": m["role"], "content": m["content"]}
-                for m in st.session_state.messages
-            ],
-            stream=True,
-        )
+    # File path to the transaction.csv
+    file_path = "transaction.csv"
 
-        # Stream the response to the chat using `st.write_stream`, then store it in 
-        # session state.
-        with st.chat_message("assistant"):
-            response = st.write_stream(stream)
-        st.session_state.messages.append({"role": "assistant", "content": response})
+    # Load data
+    data = load_data(file_path)
+
+    # Sample merchants, tags, and cities for filtering
+    merchants = data['Merchant'].unique().tolist()
+    tags = data[['Tag1', 'Tag2', 'Tag3']].stack().unique().tolist()
+    cities = data['City'].unique().tolist()
+
+    # User input
+    user_input = st.text_input("Enter your query:", "")
+
+    if st.button("Process Query"):
+        if user_input.strip():
+            # Determine processing method
+            processing_method = handle_input(user_input)
+            st.write(f"Processing method: {processing_method}")
+
+            # Filter words based on known merchants, tags, and cities
+            filtered_words = filter_input(user_input, merchants, tags, cities)
+            st.write(f"Filtered words: {filtered_words}")
+
+            # Generate SQL-like query or filter logic
+            if processing_method == "StringMatching" and filtered_words:
+                # Create filtering conditions
+                conditions = []
+                for word in filtered_words:
+                    condition = (
+                        f"(Merchant.str.contains('{word}', case=False) | "
+                        f"Tag1.str.contains('{word}', case=False) | "
+                        f"Tag2.str.contains('{word}', case=False) | "
+                        f"Tag3.str.contains('{word}', case=False) | "
+                        f"City.str.contains('{word}', case=False))"
+                    )
+                    conditions.append(condition)
+
+                # Combine conditions
+                query = " & ".join(conditions)
+
+                # Filter DataFrame based on the query
+                filtered_data = data.query(query, engine='python')
+                st.write("Filtered Results:", filtered_data)
+            else:
+                st.write("Could not classify the query. Try using different keywords.")
+        else:
+            st.write("Please enter a query.")
+
+# Run the app
+if __name__ == "__main__":
+    main()

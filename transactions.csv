@@ -1,0 +1,366 @@
+Date;Merchant;Amount(€);Tag1;Tag2;Tag3;City
+2023-12-10;ASOS;421,77;moda;ropa;tienda online;Madrid
+2023-08-02;Etsy;418,25;e-commerce;artesanías;compras online;Sevilla
+2023-04-26;TUI;732,41;viajes;vacaciones;paquetes;Madrid
+2023-12-01;Sephora;231,94;belleza;cosméticos;tienda;Barcelona
+2023-01-14;Samsung Store;243,64;electrónica;tecnología;tienda;Barcelona
+2023-05-21;Boots;200,83;farmacia;salud;belleza;Valencia
+2023-10-05;Domino's Pizza;47,26;restaurante;comida rápida;comida;Barcelona
+2023-09-01;TripAdvisor;273,42;viajes;reseñas;reservas;Valencia
+2023-12-17;Expedia;513,33;viajes;reservas;vuelos;Madrid
+2023-09-17;Lonely Planet;367,07;viajes;guías;libros;Sevilla
+2023-05-17;Airbnb;817,63;alojamiento;viajes;vacaciones;Valencia
+2023-02-09;Pizza Hut;64,87;restaurante;comida rápida;comida;Barcelona
+2023-12-20;Decathlon;75,73;deportes;ropa deportiva;tienda;Sevilla
+2023-04-05;Groupon;118,39;servicios;descuentos;compras online;Valencia
+2023-01-10;Panera Bread;45,3;restaurante;comida saludable;comida;Barcelona
+2023-04-09;Lidl;143,59;supermercado;comestibles;alimentación;Sevilla
+2023-07-30;H&M;201,61;moda;ropa;tienda;Madrid
+2023-06-02;ASOS;299,77;moda;ropa;tienda online;Madrid
+2023-12-19;Dia;25,99;supermercado;comestibles;alimentación;Madrid
+2023-04-20;Santander;40,69;banca;finanzas;servicios bancarios;Barcelona
+2023-07-11;KFC;11,56;restaurante;comida rápida;comida;Valencia
+2023-11-28;Dunkin' Donuts;77,94;cafetería;bebidas;café;Valencia
+2023-04-19;MediaMarkt;211,63;electrónica;electrodomésticos;tienda;Valencia
+2023-12-29;Uber;192,19;transporte;servicios;movilidad;Barcelona
+2023-06-04;Amazon;314,71;e-commerce;electrónica;compras online;Madrid
+2023-08-12;Carrefour;34,86;supermercado;comestibles;alimentación;Barcelona
+2023-12-02;TUI;609,13;viajes;vacaciones;paquetes;Madrid
+2023-07-26;Papa John's;22,09;restaurante;comida rápida;comida;Valencia
+2023-08-07;Papa John's;47,06;restaurante;comida rápida;comida;Valencia
+2023-01-03;Mercadona;66,08;supermercado;comida;alimentación;Madrid
+2023-04-16;Santander;-324,08;banca;finanzas;servicios bancarios;Barcelona
+2023-06-09;TUI;949,17;viajes;vacaciones;paquetes;Madrid
+2023-01-17;TUI;261,94;viajes;vacaciones;paquetes;Madrid
+2023-06-14;Samsung Store;197,78;electrónica;tecnología;tienda;Barcelona
+2023-01-16;Aliexpress;129,57;e-commerce;compras online;electrónica;Madrid
+2023-05-30;Spotify;18,79;entretenimiento;música;suscripción;Madrid
+2023-09-17;Expedia;103,27;viajes;reservas;vuelos;Madrid
+2023-07-08;Domino's Pizza;83,57;restaurante;comida rápida;comida;Barcelona
+2023-03-23;Spotify;18,09;entretenimiento;música;suscripción;Madrid
+2023-03-03;Dia;110,65;supermercado;comestibles;alimentación;Madrid
+2023-07-11;Decathlon;237,71;deportes;ropa deportiva;tienda;Sevilla
+2023-03-19;Expedia;686,53;viajes;reservas;vuelos;Madrid
+2023-06-25;Netflix;35,65;entretenimiento;streaming;suscripción;Barcelona
+2023-07-16;Uber;99,89;transporte;servicios;movilidad;Barcelona
+2023-09-16;Patagonia;39,35;deportes;ropa deportiva;tienda;Sevilla
+2023-06-10;TGI Fridays;18,05;restaurante;comida internacional;comida;Sevilla
+2023-05-01;Subway;51,53;restaurante;comida rápida;comida;Madrid
+2023-04-19;Starbucks;90,28;cafetería;bebidas;café;Madrid
+2023-08-18;Airbnb;885,86;alojamiento;viajes;vacaciones;Valencia
+2023-12-10;Mercadona;119,97;supermercado;comida;alimentación;Madrid
+2023-10-24;Lonely Planet;430,53;viajes;guías;libros;Sevilla
+2023-02-04;Panera Bread;92,55;restaurante;comida saludable;comida;Barcelona
+2023-10-16;Subway;72,39;restaurante;comida rápida;comida;Madrid
+2023-06-20;Wish;302,75;e-commerce;compras online;variedad;Barcelona
+2023-04-27;TripAdvisor;315,53;viajes;reseñas;reservas;Valencia
+2023-11-17;TUI;973,05;viajes;vacaciones;paquetes;Madrid
+2023-09-13;KFC;80,47;restaurante;comida rápida;comida;Valencia
+2023-01-09;Santander;-357,53;banca;finanzas;servicios bancarios;Barcelona
+2023-12-16;Dunkin' Donuts;21,21;cafetería;bebidas;café;Valencia
+2023-02-25;Skyscanner;668,89;viajes;vuelos;reservas;Barcelona
+2023-01-20;Amazon;153,5;e-commerce;electrónica;compras online;Madrid
+2023-03-13;Chipotle;43,12;restaurante;comida rápida;comida;Madrid
+2023-04-30;Nike;239,41;deportes;ropa deportiva;calzado;Madrid
+2023-05-01;Vinted;401,8;e-commerce;ropa de segunda mano;compras online;Valencia
+2023-01-10;Amazon;191,86;e-commerce;electrónica;compras online;Madrid
+2023-02-25;Aliexpress;108,3;e-commerce;compras online;electrónica;Madrid
+2023-12-21;Sephora;260,88;belleza;cosméticos;tienda;Barcelona
+2023-06-18;Etsy;461,41;e-commerce;artesanías;compras online;Sevilla
+2023-09-26;Mercadona;133,61;supermercado;comida;alimentación;Madrid
+2023-01-16;Spotify;9,65;entretenimiento;música;suscripción;Madrid
+2023-02-09;Pizza Hut;80,2;restaurante;comida rápida;comida;Barcelona
+2023-01-14;H&M;283,46;moda;ropa;tienda;Madrid
+2023-08-10;MediaMarkt;24,81;electrónica;electrodomésticos;tienda;Valencia
+2023-12-28;Apple Store;59,37;electrónica;tecnología;tienda;Madrid
+2023-12-21;Booking.com;150,46;alojamiento;reservas;viajes;Sevilla
+2023-03-09;La Caixa;413,68;banca;finanzas;servicios bancarios;Madrid
+2023-11-09;TripAdvisor;849,31;viajes;reseñas;reservas;Valencia
+2023-04-10;Sephora;157,63;belleza;cosméticos;tienda;Barcelona
+2023-08-29;El Corte Inglés;26,78;tienda;moda;ropa;Madrid
+2023-05-07;Pizza Hut;65,67;restaurante;comida rápida;comida;Barcelona
+2023-11-26;Subway;15,16;restaurante;comida rápida;comida;Madrid
+2023-10-11;Panera Bread;45,03;restaurante;comida saludable;comida;Barcelona
+2023-11-28;Red Lobster;41,02;restaurante;mariscos;comida;Madrid
+2023-12-13;Groupon;17,97;servicios;descuentos;compras online;Valencia
+2023-10-11;TGI Fridays;73,62;restaurante;comida internacional;comida;Sevilla
+2023-05-28;Etsy;200,69;e-commerce;artesanías;compras online;Sevilla
+2023-03-13;Dia;35,73;supermercado;comestibles;alimentación;Madrid
+2023-09-19;Costa Coffee;53,34;cafetería;bebidas;café;Sevilla
+2023-03-01;Subway;46,46;restaurante;comida rápida;comida;Madrid
+2023-12-06;Costa Coffee;46,29;cafetería;bebidas;café;Sevilla
+2023-11-04;Mango;141,43;moda;ropa;tienda;Barcelona
+2023-03-11;Dunkin' Donuts;86,98;cafetería;bebidas;café;Valencia
+2023-05-11;Thomas Cook;314,01;viajes;reservas;vacaciones;Barcelona
+2023-03-01;Aliexpress;216,18;e-commerce;compras online;electrónica;Madrid
+2023-11-02;Adidas;128;deportes;ropa deportiva;calzado;Barcelona
+2023-06-02;Subway;49,71;restaurante;comida rápida;comida;Madrid
+2023-02-18;TGI Fridays;24,28;restaurante;comida internacional;comida;Sevilla
+2023-04-26;Lidl;32,35;supermercado;comestibles;alimentación;Sevilla
+2023-03-28;Groupon;260,76;servicios;descuentos;compras online;Valencia
+2023-01-12;Mercadona;117,96;supermercado;comida;alimentación;Madrid
+2023-11-26;Patagonia;116,21;deportes;ropa deportiva;tienda;Sevilla
+2023-12-03;The North Face;30,47;deportes;ropa deportiva;tienda;Valencia
+2023-04-19;Airbnb;185,44;alojamiento;viajes;vacaciones;Valencia
+2023-08-10;Domino's Pizza;6,78;restaurante;comida rápida;comida;Barcelona
+2023-07-26;Decathlon;111,99;deportes;ropa deportiva;tienda;Sevilla
+2023-07-05;Netflix;14,48;entretenimiento;streaming;suscripción;Barcelona
+2023-06-05;Etsy;308,93;e-commerce;artesanías;compras online;Sevilla
+2023-10-09;Subway;16,79;restaurante;comida rápida;comida;Madrid
+2023-12-03;Mango;271,18;moda;ropa;tienda;Barcelona
+2023-11-14;Starbucks;85,24;cafetería;bebidas;café;Madrid
+2023-07-21;Thomas Cook;61,75;viajes;reservas;vacaciones;Barcelona
+2023-05-25;Thomas Cook;753,57;viajes;reservas;vacaciones;Barcelona
+2023-07-24;Lidl;134,89;supermercado;comestibles;alimentación;Sevilla
+2023-01-12;Samsung Store;35,8;electrónica;tecnología;tienda;Barcelona
+2023-05-28;Vinted;364,07;e-commerce;ropa de segunda mano;compras online;Valencia
+2023-01-13;H&M;67,5;moda;ropa;tienda;Madrid
+2023-10-31;Repsol;184,69;combustible;transporte;gasolina;Madrid
+2023-10-12;Groupon;148,49;servicios;descuentos;compras online;Valencia
+2023-04-24;Netflix;38,84;entretenimiento;streaming;suscripción;Barcelona
+2023-10-27;Pizza Hut;99,76;restaurante;comida rápida;comida;Barcelona
+2023-09-26;Expedia;99,8;viajes;reservas;vuelos;Madrid
+2023-03-21;Spotify;42,46;entretenimiento;música;suscripción;Madrid
+2023-07-29;Boots;84,31;farmacia;salud;belleza;Valencia
+2023-04-18;Vinted;326,35;e-commerce;ropa de segunda mano;compras online;Valencia
+2023-02-19;Papa John's;72,46;restaurante;comida rápida;comida;Valencia
+2023-02-16;Wish;292,67;e-commerce;compras online;variedad;Barcelona
+2023-05-22;Etsy;465,51;e-commerce;artesanías;compras online;Sevilla
+2023-10-18;Etsy;92;e-commerce;artesanías;compras online;Sevilla
+2023-02-13;Amazon;13,67;e-commerce;electrónica;compras online;Madrid
+2023-04-19;Spotify;15,77;entretenimiento;música;suscripción;Madrid
+2023-09-19;Samsung Store;227,6;electrónica;tecnología;tienda;Barcelona
+2023-06-19;TripAdvisor;361,68;viajes;reseñas;reservas;Valencia
+2023-07-18;Aliexpress;295,86;e-commerce;compras online;electrónica;Madrid
+2023-02-18;Bath & Body Works;67,36;belleza;cosméticos;tienda;Madrid
+2023-09-24;Papa John's;83,56;restaurante;comida rápida;comida;Valencia
+2023-06-23;Mango;273,66;moda;ropa;tienda;Barcelona
+2023-10-09;El Corte Inglés;148,46;tienda;moda;ropa;Madrid
+2023-11-20;Repsol;165,92;combustible;transporte;gasolina;Madrid
+2023-06-20;McDonald's;95,81;restaurante;comida rápida;comida;Valencia
+2023-06-17;Groupon;255,33;servicios;descuentos;compras online;Valencia
+2023-10-29;El Corte Inglés;151,59;tienda;moda;ropa;Madrid
+2023-02-13;Groupon;58,73;servicios;descuentos;compras online;Valencia
+2023-02-27;Apple Store;94,78;electrónica;tecnología;tienda;Madrid
+2023-10-04;Lidl;146,22;supermercado;comestibles;alimentación;Sevilla
+2023-07-01;Nike;78,45;deportes;ropa deportiva;calzado;Madrid
+2023-02-22;TUI;61,32;viajes;vacaciones;paquetes;Madrid
+2023-12-06;Zalando;230,89;moda;ropa;tienda online;Barcelona
+2023-07-06;KFC;65,81;restaurante;comida rápida;comida;Valencia
+2023-06-28;Vinted;376,51;e-commerce;ropa de segunda mano;compras online;Valencia
+2023-12-30;Groupon;280,87;servicios;descuentos;compras online;Valencia
+2023-02-05;Mercadona;88,88;supermercado;comida;alimentación;Madrid
+2023-09-22;Burger King;13,54;restaurante;comida rápida;comida;Valencia
+2023-06-15;MediaMarkt;43,64;electrónica;electrodomésticos;tienda;Valencia
+2023-10-07;Boots;243,36;farmacia;salud;belleza;Valencia
+2023-10-28;Skyscanner;282,86;viajes;vuelos;reservas;Barcelona
+2023-07-10;Domino's Pizza;43,59;restaurante;comida rápida;comida;Barcelona
+2023-05-01;McDonald's;34,63;restaurante;comida rápida;comida;Valencia
+2023-04-02;TripAdvisor;87,86;viajes;reseñas;reservas;Valencia
+2023-04-16;Bath & Body Works;262,94;belleza;cosméticos;tienda;Madrid
+2023-05-12;Groupon;201,76;servicios;descuentos;compras online;Valencia
+2023-11-30;Costa Coffee;57,27;cafetería;bebidas;café;Sevilla
+2023-11-09;Samsung Store;109,08;electrónica;tecnología;tienda;Barcelona
+2023-02-06;Adidas;203,67;deportes;ropa deportiva;calzado;Barcelona
+2023-08-24;Wish;491,92;e-commerce;compras online;variedad;Barcelona
+2023-09-28;Mercadona;105,7;supermercado;comida;alimentación;Madrid
+2023-01-03;Dunkin' Donuts;32,77;cafetería;bebidas;café;Valencia
+2023-03-20;Boots;249,64;farmacia;salud;belleza;Valencia
+2023-12-12;Bath & Body Works;24,36;belleza;cosméticos;tienda;Madrid
+2023-06-13;Lidl;107,56;supermercado;comestibles;alimentación;Sevilla
+2023-06-09;Decathlon;278,74;deportes;ropa deportiva;tienda;Sevilla
+2023-11-11;Sephora;150,22;belleza;cosméticos;tienda;Barcelona
+2023-04-25;Wish;88,32;e-commerce;compras online;variedad;Barcelona
+2023-02-12;Netflix;28,04;entretenimiento;streaming;suscripción;Barcelona
+2023-03-14;El Corte Inglés;194,54;tienda;moda;ropa;Madrid
+2023-04-07;Boots;79,1;farmacia;salud;belleza;Valencia
+2023-06-23;Red Lobster;20,51;restaurante;mariscos;comida;Madrid
+2023-01-02;Apple Store;70,89;electrónica;tecnología;tienda;Madrid
+2023-09-11;ASOS;305,08;moda;ropa;tienda online;Madrid
+2023-02-09;Patagonia;162,98;deportes;ropa deportiva;tienda;Sevilla
+2023-08-07;Zalando;24,3;moda;ropa;tienda online;Barcelona
+2023-10-28;Repsol;103,34;combustible;transporte;gasolina;Madrid
+2023-08-30;Netflix;31,87;entretenimiento;streaming;suscripción;Barcelona
+2023-02-17;Chipotle;44,72;restaurante;comida rápida;comida;Madrid
+2023-08-23;Netflix;33,62;entretenimiento;streaming;suscripción;Barcelona
+2023-09-11;McDonald's;97,56;restaurante;comida rápida;comida;Valencia
+2023-05-11;KFC;44,66;restaurante;comida rápida;comida;Valencia
+2023-03-15;El Corte Inglés;265,14;tienda;moda;ropa;Madrid
+2023-05-14;Spotify;19,69;entretenimiento;música;suscripción;Madrid
+2023-07-23;Mercadona;148,05;supermercado;comida;alimentación;Madrid
+2023-11-28;Bath & Body Works;129,63;belleza;cosméticos;tienda;Madrid
+2023-11-28;Aliexpress;288,07;e-commerce;compras online;electrónica;Madrid
+2023-01-23;Mango;62,65;moda;ropa;tienda;Barcelona
+2023-10-15;Groupon;225,5;servicios;descuentos;compras online;Valencia
+2023-08-01;Papa John's;86,57;restaurante;comida rápida;comida;Valencia
+2023-03-22;The North Face;287,59;deportes;ropa deportiva;tienda;Valencia
+2023-10-10;ASOS;154,92;moda;ropa;tienda online;Madrid
+2023-04-04;MediaMarkt;159,73;electrónica;electrodomésticos;tienda;Valencia
+2023-09-29;TUI;607,72;viajes;vacaciones;paquetes;Madrid
+2023-05-07;Bath & Body Works;195,34;belleza;cosméticos;tienda;Madrid
+2023-12-30;Vinted;396,97;e-commerce;ropa de segunda mano;compras online;Valencia
+2023-12-24;Domino's Pizza;22,23;restaurante;comida rápida;comida;Barcelona
+2023-01-23;Uber;297,04;transporte;servicios;movilidad;Barcelona
+2023-06-12;Dia;114,87;supermercado;comestibles;alimentación;Madrid
+2023-05-06;La Caixa;-94,8;banca;finanzas;servicios bancarios;Madrid
+2023-03-29;Bath & Body Works;167,08;belleza;cosméticos;tienda;Madrid
+2023-05-12;Santander;-97,07;banca;finanzas;servicios bancarios;Barcelona
+2023-06-11;Nike;282,71;deportes;ropa deportiva;calzado;Madrid
+2023-05-10;La Caixa;295,75;banca;finanzas;servicios bancarios;Madrid
+2023-01-23;Mercadona;123,07;supermercado;comida;alimentación;Madrid
+2023-07-11;TripAdvisor;851,68;viajes;reseñas;reservas;Valencia
+2023-07-07;Mango;101;moda;ropa;tienda;Barcelona
+2023-03-17;KFC;83,85;restaurante;comida rápida;comida;Valencia
+2023-01-14;TripAdvisor;129,02;viajes;reseñas;reservas;Valencia
+2023-12-27;H&M;295,74;moda;ropa;tienda;Madrid
+2023-07-21;Booking.com;740,02;alojamiento;reservas;viajes;Sevilla
+2023-10-24;Lidl;87,89;supermercado;comestibles;alimentación;Sevilla
+2023-09-09;Expedia;969,41;viajes;reservas;vuelos;Madrid
+2023-02-10;Etsy;365,71;e-commerce;artesanías;compras online;Sevilla
+2023-08-13;TUI;264,41;viajes;vacaciones;paquetes;Madrid
+2023-01-02;Amazon;79,64;e-commerce;electrónica;compras online;Madrid
+2023-05-22;Pizza Hut;52,56;restaurante;comida rápida;comida;Barcelona
+2023-09-24;Thomas Cook;665,82;viajes;reservas;vacaciones;Barcelona
+2023-10-08;Lonely Planet;617,03;viajes;guías;libros;Sevilla
+2023-02-13;Etsy;177,59;e-commerce;artesanías;compras online;Sevilla
+2023-07-01;Fnac;14,65;electrónica;entretenimiento;librería;Barcelona
+2023-11-15;Costa Coffee;15,98;cafetería;bebidas;café;Sevilla
+2023-10-18;Santander;120,44;banca;finanzas;servicios bancarios;Barcelona
+2023-03-12;Skyscanner;744,1;viajes;vuelos;reservas;Barcelona
+2023-11-18;Lonely Planet;784,83;viajes;guías;libros;Sevilla
+2023-04-03;McDonald's;81,4;restaurante;comida rápida;comida;Valencia
+2023-11-12;Burger King;36,23;restaurante;comida rápida;comida;Valencia
+2023-12-16;Chipotle;41,6;restaurante;comida rápida;comida;Madrid
+2023-06-08;Mercadona;23,23;supermercado;comida;alimentación;Madrid
+2023-01-02;Panera Bread;98,59;restaurante;comida saludable;comida;Barcelona
+2023-08-06;The North Face;237,79;deportes;ropa deportiva;tienda;Valencia
+2023-08-23;Vinted;346,97;e-commerce;ropa de segunda mano;compras online;Valencia
+2023-06-27;Spotify;42,72;entretenimiento;música;suscripción;Madrid
+2023-10-07;Skyscanner;644,56;viajes;vuelos;reservas;Barcelona
+2023-03-28;The North Face;113,92;deportes;ropa deportiva;tienda;Valencia
+2023-06-18;Bath & Body Works;257,95;belleza;cosméticos;tienda;Madrid
+2023-08-28;Bath & Body Works;105,95;belleza;cosméticos;tienda;Madrid
+2023-11-06;Fnac;33,55;electrónica;entretenimiento;librería;Barcelona
+2023-11-26;Vinted;46,32;e-commerce;ropa de segunda mano;compras online;Valencia
+2023-04-15;Panera Bread;62,9;restaurante;comida saludable;comida;Barcelona
+2023-06-08;TripAdvisor;616,56;viajes;reseñas;reservas;Valencia
+2023-06-22;Nike;37,67;deportes;ropa deportiva;calzado;Madrid
+2023-10-18;Fnac;31,58;electrónica;entretenimiento;librería;Barcelona
+2023-12-05;Booking.com;307,74;alojamiento;reservas;viajes;Sevilla
+2023-08-18;Booking.com;467,68;alojamiento;reservas;viajes;Sevilla
+2023-04-10;Burger King;31,38;restaurante;comida rápida;comida;Valencia
+2023-07-07;Panera Bread;7,01;restaurante;comida saludable;comida;Barcelona
+2023-03-02;Panera Bread;67,14;restaurante;comida saludable;comida;Barcelona
+2023-07-01;Dia;76,53;supermercado;comestibles;alimentación;Madrid
+2023-09-23;Sephora;110,89;belleza;cosméticos;tienda;Barcelona
+2023-02-04;Sephora;106,45;belleza;cosméticos;tienda;Barcelona
+2023-10-19;McDonald's;30,22;restaurante;comida rápida;comida;Valencia
+2023-02-06;Samsung Store;38,51;electrónica;tecnología;tienda;Barcelona
+2023-02-11;TUI;62,85;viajes;vacaciones;paquetes;Madrid
+2023-09-09;TGI Fridays;6,62;restaurante;comida internacional;comida;Sevilla
+2023-06-18;El Corte Inglés;137,77;tienda;moda;ropa;Madrid
+2023-05-11;Bath & Body Works;176,66;belleza;cosméticos;tienda;Madrid
+2023-07-03;Repsol;136,36;combustible;transporte;gasolina;Madrid
+2023-09-06;The North Face;32,27;deportes;ropa deportiva;tienda;Valencia
+2023-08-25;Decathlon;118,64;deportes;ropa deportiva;tienda;Sevilla
+2023-09-02;Zalando;100,45;moda;ropa;tienda online;Barcelona
+2023-06-28;TGI Fridays;10,76;restaurante;comida internacional;comida;Sevilla
+2023-10-19;Spotify;30,11;entretenimiento;música;suscripción;Madrid
+2023-03-17;Zara;278,17;moda;ropa;tienda;Barcelona
+2023-02-16;Repsol;242,95;combustible;transporte;gasolina;Madrid
+2023-09-17;Decathlon;247,71;deportes;ropa deportiva;tienda;Sevilla
+2023-08-09;Papa John's;60,89;restaurante;comida rápida;comida;Valencia
+2023-03-15;Vinted;291,93;e-commerce;ropa de segunda mano;compras online;Valencia
+2023-11-14;Dia;85,86;supermercado;comestibles;alimentación;Madrid
+2023-12-20;MediaMarkt;193,58;electrónica;electrodomésticos;tienda;Valencia
+2023-07-18;Netflix;28,99;entretenimiento;streaming;suscripción;Barcelona
+2023-05-02;Zalando;390,23;moda;ropa;tienda online;Barcelona
+2023-08-11;Wish;324,23;e-commerce;compras online;variedad;Barcelona
+2023-03-12;KFC;53,12;restaurante;comida rápida;comida;Valencia
+2023-10-13;Uber;168,69;transporte;servicios;movilidad;Barcelona
+2023-02-02;Thomas Cook;842,9;viajes;reservas;vacaciones;Barcelona
+2023-04-23;Starbucks;70,58;cafetería;bebidas;café;Madrid
+2023-09-01;Boots;65,43;farmacia;salud;belleza;Valencia
+2023-02-18;Mercadona;87,26;supermercado;comida;alimentación;Madrid
+2023-08-01;Nike;271,07;deportes;ropa deportiva;calzado;Madrid
+2023-09-01;Dia;49,43;supermercado;comestibles;alimentación;Madrid
+2023-11-23;El Corte Inglés;224,13;tienda;moda;ropa;Madrid
+2023-08-19;Thomas Cook;284,54;viajes;reservas;vacaciones;Barcelona
+2023-05-25;Chipotle;7,19;restaurante;comida rápida;comida;Madrid
+2023-04-12;Airbnb;706,54;alojamiento;viajes;vacaciones;Valencia
+2023-09-16;El Corte Inglés;85,77;tienda;moda;ropa;Madrid
+2023-06-15;Booking.com;462,41;alojamiento;reservas;viajes;Sevilla
+2023-09-29;KFC;55,5;restaurante;comida rápida;comida;Valencia
+2023-07-09;Pizza Hut;20,31;restaurante;comida rápida;comida;Barcelona
+2023-07-07;Zara;48,26;moda;ropa;tienda;Barcelona
+2023-04-22;Bath & Body Works;216,41;belleza;cosméticos;tienda;Madrid
+2023-11-23;Papa John's;98,41;restaurante;comida rápida;comida;Valencia
+2023-12-05;Zalando;219,9;moda;ropa;tienda online;Barcelona
+2023-06-27;Thomas Cook;261,51;viajes;reservas;vacaciones;Barcelona
+2023-10-04;MediaMarkt;244,31;electrónica;electrodomésticos;tienda;Valencia
+2023-04-18;Apple Store;93,88;electrónica;tecnología;tienda;Madrid
+2023-03-08;Ikea;145,03;hogar;muebles;decoración;Madrid
+2023-01-05;El Corte Inglés;282;tienda;moda;ropa;Madrid
+2023-01-17;El Corte Inglés;293,08;tienda;moda;ropa;Madrid
+2023-04-05;Zalando;237,89;moda;ropa;tienda online;Barcelona
+2023-11-07;La Caixa;-350,65;banca;finanzas;servicios bancarios;Madrid
+2023-09-12;Carrefour;44,54;supermercado;comestibles;alimentación;Barcelona
+2023-09-21;Expedia;648,47;viajes;reservas;vuelos;Madrid
+2023-04-04;Skyscanner;417,88;viajes;vuelos;reservas;Barcelona
+2023-10-29;Bath & Body Works;175,24;belleza;cosméticos;tienda;Madrid
+2023-09-13;Patagonia;175,83;deportes;ropa deportiva;tienda;Sevilla
+2023-12-15;MediaMarkt;156,77;electrónica;electrodomésticos;tienda;Valencia
+2023-03-18;Thomas Cook;182,61;viajes;reservas;vacaciones;Barcelona
+2023-01-20;Lonely Planet;69,32;viajes;guías;libros;Sevilla
+2023-10-04;Subway;5,59;restaurante;comida rápida;comida;Madrid
+2023-09-18;Lidl;91,22;supermercado;comestibles;alimentación;Sevilla
+2023-07-14;Booking.com;883,2;alojamiento;reservas;viajes;Sevilla
+2023-08-31;Etsy;237,54;e-commerce;artesanías;compras online;Sevilla
+2023-04-18;ASOS;287,58;moda;ropa;tienda online;Madrid
+2023-10-06;Lonely Planet;783,38;viajes;guías;libros;Sevilla
+2023-05-02;Boots;158,05;farmacia;salud;belleza;Valencia
+2023-07-02;Aliexpress;334,85;e-commerce;compras online;electrónica;Madrid
+2023-02-19;Vinted;238,06;e-commerce;ropa de segunda mano;compras online;Valencia
+2023-10-01;Chipotle;66,46;restaurante;comida rápida;comida;Madrid
+2023-04-04;Aliexpress;195,89;e-commerce;compras online;electrónica;Madrid
+2023-07-21;ASOS;470,64;moda;ropa;tienda online;Madrid
+2023-12-15;Decathlon;170,06;deportes;ropa deportiva;tienda;Sevilla
+2023-02-17;Zara;203,98;moda;ropa;tienda;Barcelona
+2023-11-25;Domino's Pizza;64,03;restaurante;comida rápida;comida;Barcelona
+2023-11-22;TUI;331,51;viajes;vacaciones;paquetes;Madrid
+2023-01-17;Amazon;227,46;e-commerce;electrónica;compras online;Madrid
+2023-09-28;El Corte Inglés;109,47;tienda;moda;ropa;Madrid
+2023-12-08;Airbnb;834,36;alojamiento;viajes;vacaciones;Valencia
+2023-02-01;Boots;147,34;farmacia;salud;belleza;Valencia
+2023-02-27;Mango;17,86;moda;ropa;tienda;Barcelona
+2023-08-06;Expedia;951,6;viajes;reservas;vuelos;Madrid
+2023-04-22;Etsy;192,13;e-commerce;artesanías;compras online;Sevilla
+2023-05-06;Mango;174,29;moda;ropa;tienda;Barcelona
+2023-08-19;Panera Bread;63,02;restaurante;comida saludable;comida;Barcelona
+2023-09-07;Skyscanner;755,51;viajes;vuelos;reservas;Barcelona
+2023-10-22;Decathlon;98,17;deportes;ropa deportiva;tienda;Sevilla
+2023-05-31;Subway;12,66;restaurante;comida rápida;comida;Madrid
+2023-09-04;Decathlon;178,24;deportes;ropa deportiva;tienda;Sevilla
+2023-07-31;The North Face;241,3;deportes;ropa deportiva;tienda;Valencia
+2023-12-03;Carrefour;76,91;supermercado;comestibles;alimentación;Barcelona
+2023-05-12;Fnac;44,61;electrónica;entretenimiento;librería;Barcelona
+2023-10-22;H&M;118,89;moda;ropa;tienda;Madrid
+2023-08-23;Booking.com;340,93;alojamiento;reservas;viajes;Sevilla
+2023-12-31;Red Lobster;53,78;restaurante;mariscos;comida;Madrid
+2023-09-07;Sephora;230,9;belleza;cosméticos;tienda;Barcelona
+2023-01-28;Nike;187,09;deportes;ropa deportiva;calzado;Madrid
+2023-12-25;Spotify;14,75;entretenimiento;música;suscripción;Madrid
+2023-03-26;Boots;32,76;farmacia;salud;belleza;Valencia
+2023-06-26;Fnac;48,93;electrónica;entretenimiento;librería;Barcelona
+2023-05-03;Samsung Store;231,5;electrónica;tecnología;tienda;Barcelona
+2023-01-19;Apple Store;29,51;electrónica;tecnología;tienda;Madrid
+2023-09-10;Etsy;382,49;e-commerce;artesanías;compras online;Sevilla
+2023-04-05;Zalando;406,57;moda;ropa;tienda online;Barcelona
+2023-05-24;Burger King;63,68;restaurante;comida rápida;comida;Valencia
+2023-10-29;TripAdvisor;367,23;viajes;reseñas;reservas;Valencia
+2023-04-12;Dunkin' Donuts;90,37;cafetería;bebidas;café;Valencia
+2023-10-17;TripAdvisor;644,33;viajes;reseñas;reservas;Valencia
+2023-05-14;KFC;9,79;restaurante;comida rápida;comida;Valencia
+2023-07-02;Red Lobster;5,81;restaurante;mariscos;comida;Madrid
+2023-09-10;Spotify;13,3;entretenimiento;música;suscripción;Madrid
+2023-02-23;El Corte Inglés;169;tienda;moda;ropa;Madrid
